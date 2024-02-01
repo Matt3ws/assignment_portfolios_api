@@ -1,15 +1,11 @@
-
-import BoilerBox from '@/components/boilerplate/boilerbox'
-import styles from './page.module.css'
+import BoilerBox from '@/components/boilerplate/boilerbox';
+import styles from './page.module.css';
+import ImageSearch from '@/components/search/imageSearch/imageSearch';
 
 export default async function Page() {
-
   return (
     <main className={styles.page}>
-      
-      <BoilerBox></BoilerBox>
-      {/* Indsæt Client Component her og fjern boilerboxen */}
+      <ImageSearch />
     </main>
-  )
+  );
 }
-
